@@ -8,6 +8,7 @@ authors = ["Gabriel Falcão <gabriel@nacaolivre.org>"]
 python = "^3.6"
 flask = "^1.0"
 pyzmq = "^18.0"
+requests = "^2.21"
 
 [tool.poetry.dev-dependencies]
 
