@@ -1,0 +1,28 @@
+{% if success %}
+<div class="alert alert-success" role="alert">{{ success}}</div>
+{% endif %}
+
+<form method="post" action="/download/push">
+  <div class="form-group">
+    <center>
+      <label for="url">Type or Paste target URL below:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="url"
+        name="url"
+        aria-describedby="urlHelp"
+        placeholder="http://example.com/file.mp3"
+        value="https://github.com/gabrielfalcao/HTTPretty/raw/master/docs/source/_static/logo.svg?sanitize=true"
+      />
+      <small id="urlHelp" class="form-text text-muted"
+        >The target URL to be downloaded by our background jobs.</small
+      >
+    </center>
+  </div>
+  <center>
+    <button type="submit" class="btn btn-lg btn-success">
+      Enqueue for download
+    </button>
+  </center>
+</form>
